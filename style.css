@@ -1,0 +1,178 @@
+body{
+ background-color: lightblue;
+}
+#grass{
+background-color: green;
+height:100px;
+width:2000px;
+position: absolute;
+top:901px;
+right:1px;
+}
+#building{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  bottom:100px;
+  right: 100px;
+  height: 500px;
+  width: 500px;
+  background-color: gray;
+}
+.windowlarge{
+  position: relative;
+  left: 0px;
+  top: 10px;
+  background-color: lightblue;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+#sun{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 70px;
+  height: 70px;
+  background-color: yellow;
+  border-radius: 50px;
+}
+#house{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  bottom: 50px;
+  left: 50px;
+  background-color:brown;
+  width: 85px;
+  height: 85px; 
+}
+.window{
+  position: relative;
+  left: 0px;
+  top: 5px;
+  background-color: lightblue;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+
+.arrow{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 42.5px 85px 42.5px;
+  border-color: transparent transparent #007bff transparent;
+}
+.triangle-top{
+    position: absolute;
+    top: 735px;
+    left: 50px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 42.5px 85px 42.5px;
+    border-color: transparent transparent #6980fe transparent;
+}
+
+#daisy1{
+ position: absolute;
+ bottom:30px;
+ display: block;
+ left: 150px;
+  width: 100px;
+   animation-name: cow1Move;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+ 
+    /* -webkit-box-reflect: right 10px; */
+}
+
+#daisy2{
+  position: absolute;
+ bottom:30px;
+ display: block;
+ left: 350px;
+  width: 100px;
+ transform: scale(-1, 1);
+  animation-name: cow2Move;
+  animation-duration: 6s;
+    animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cow1Move {
+  from {left:150px}
+  to {left: 100px}
+}
+  @keyframes cow2Move {
+  from {left: 350px}
+  to {left: 400px}
+}
+
+/* The animation code */
+@keyframes darkenSky {
+  from {background-color: blue;}
+  to {background-color: black;}
+}
+@keyframes turnOnTheLights {
+  from {background-color: lightblue;
+  box-shadow: 0px 0px 0px 0px lightblue}
+  to {background-color: yellow;
+  box-shadow: 0px 0px 6px 6px orange;}
+}
+@keyframes sunToMoon {
+  from {background-color: yellow;}
+  to {background-color: whitesmoke;}
+}
+
+@keyframes nightCloud {
+  from {background-color: whitesmoke}
+  to {background-color:black}
+}
+#cloud-container{
+  position: relative;
+  top: 90px;
+  left: 250px;
+}
+
+.cloud{
+  width: 50px;
+  height:50px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+   animation-name: nightCloud;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+ 
+}
+
+#cloud-left{
+  position: absolute;
+  /* background-color: red; */
+  background-color: whitesmoke;
+  bottom: 15px;
+  left: 15px;
+}
+
+#cloud-middle{
+  position: absolute;
+   /* background-color: orange; */
+  background-color: whitesmoke;
+  bottom: 0px;
+  left: 0px;
+}
+
+#cloud-right{
+  position: absolute;
+  /* background-color: pink; */
+  background-color: whitesmoke;
+  bottom: 0px;
+  left: 30px;
+}
